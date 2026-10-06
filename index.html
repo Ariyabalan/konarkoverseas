@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konark Overseas | Premium Leather Garments & Finished Leather – Chennai, India</title>
+<meta name="description" content="Konark Overseas – Chennai-based exporter of premium leather jackets and finished leather since 1990. Supplying to Europe, USA, Germany, Italy, Switzerland & Sweden. Chrome-tanned leather craftsmanship.">
+<meta name="keywords" content="leather jacket manufacturer India, finished leather exporter Chennai, leather garments wholesale, nappa leather supplier, konark overseas, premium leather India">
+<meta property="og:title" content="Konark Overseas | Premium Leather Garments & Finished Leather">
+<meta property="og:description" content="Three decades of leather excellence. Supplying premium finished leather and bespoke garments to Europe's finest fashion houses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --cream: #F5EFE6;
+    --warm-white: #FDFAF6;
+    --deep-brown: #2C1810;
+    --rich-brown: #5C3D2E;
+    --cognac: #A0522D;
+    --gold: #C9A84C;
+    --gold-light: #E8C97A;
+    --tan: #D4A574;
+    --charcoal: #1A1A1A;
+    --muted: #8A7560;
+    --border: rgba(160,82,45,0.2);
+    --border-light: rgba(201,168,76,0.25);
+    --shadow: 0 20px 60px rgba(44,24,16,0.15);
+    --shadow-sm: 0 4px 20px rgba(44,24,16,0.1);
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Jost', sans-serif; background: var(--warm-white); color: var(--deep-brown); overflow-x: hidden; }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--cream); }
+  ::-webkit-scrollbar-thumb { background: var(--cognac); border-radius: 3px; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(253,250,246,0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-light);
+    transition: all 0.4s ease;
+  }
+  nav.scrolled { background: rgba(44,24,16,0.97); border-bottom-color: rgba(201,168,76,0.3); }
+  nav.scrolled .nav-logo-text, nav.scrolled .nav-links a, nav.scrolled .nav-address { color: var(--cream); }
+  nav.scrolled .nav-links a::after { background: var(--gold); }
+  .nav-inner {
+    max-width: 1400px; margin: 0 auto; padding: 0 40px;
+    display: flex; align-items: center; justify-content: space-between; height: 80px;
+  }
+  .nav-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+  .nav-logo-icon { width: auto; height: 72px; background: transparent; border-radius: 0; display: flex; align-items: center; justify-content: center; position: relative; overflow: visible; flex-shrink: 0; }
+  .nav-logo-icon img { width: 64px; height: 64px; object-fit: contain; }
+  .nav-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--deep-brown); line-height: 1.1; letter-spacing: 0.02em; }
+  .nav-logo-text span { display: block; font-size: 0.65rem; font-family: 'Jost', sans-serif; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--cognac); margin-top: 2px; }
+  nav.scrolled .nav-logo-text span { color: rgba(201,168,76,0.85); }
+  .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; position: relative; }
+  .nav-links a { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--deep-brown); position: relative; padding-bottom: 4px; transition: color 0.3s; }
+  .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: var(--cognac); transition: width 0.3s ease; }
+  .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+  .nav-links a:hover { color: var(--cognac); }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown-menu { position: absolute; top: calc(100% + 16px); left: 50%; transform: translateX(-50%) translateY(-8px); background: var(--deep-brown); border: 1px solid var(--border-light); border-radius: 4px; min-width: 200px; opacity: 0; pointer-events: none; transition: all 0.3s ease; z-index: 100; }
+  .nav-dropdown:hover .nav-dropdown-menu { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+  .nav-dropdown-menu a { display: block; padding: 12px 20px; color: var(--cream) !important; font-size: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.08); letter-spacing: 0.1em; transition: background 0.2s; }
+  .nav-dropdown-menu a:hover { background: rgba(201,168,76,0.15); color: var(--gold) !important; }
+  .nav-dropdown-menu a::after { display: none !important; }
+  .nav-address { font-size: 0.68rem; letter-spacing: 0.06em; color: var(--muted); text-align: right; line-height: 1.5; display: none; }
+  @media(min-width:1100px) { .nav-address { display: block; } }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--cognac); transition: all 0.3s; }
+  nav.scrolled .hamburger span { background: var(--gold); }
+
+  /* MOBILE MENU */
+  .mobile-menu { position: fixed; top: 0; right: -100%; width: 300px; height: 100vh; background: var(--deep-brown); z-index: 2000; padding: 100px 40px 40px; transition: right 0.4s ease; box-shadow: -10px 0 40px rgba(0,0,0,0.3); }
+  .mobile-menu.open { right: 0; }
+  .mobile-menu a { display: block; color: var(--cream); text-decoration: none; font-size: 1.1rem; font-family: 'Cormorant Garamond', serif; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); letter-spacing: 0.05em; }
+  .mobile-menu a:hover { color: var(--gold); }
+  .mobile-close { position: absolute; top: 24px; right: 24px; background: none; border: none; color: var(--cream); font-size: 1.8rem; cursor: pointer; }
+  .overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1999; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+  .overlay.active { opacity: 1; pointer-events: all; }
+
+  /* HERO */
+  #home { min-height: 100vh; position: relative; display: flex; flex-direction: column; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, var(--deep-brown) 0%, #3D1F0F 40%, var(--rich-brown) 70%, #8B4513 100%); }
+  .hero-texture { position: absolute; inset: 0; opacity: 0.04; background-image: repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%); background-size: 20px 20px; }
+  .hero-grain { position: absolute; inset: 0; opacity: 0.03; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); }
+  .hero-circle-1 { position: absolute; width: 600px; height: 600px; border-radius: 50%; border: 1px solid rgba(201,168,76,0.15); top: -100px; right: -100px; animation: pulse-ring 6s ease-in-out infinite; }
+  .hero-circle-2 { position: absolute; width: 400px; height: 400px; border-radius: 50%; border: 1px solid rgba(201,168,76,0.1); top: 0px; right: 0px; animation: pulse-ring 6s ease-in-out infinite 1s; }
+  @keyframes pulse-ring { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: 0.7; } }
+  .hero-wheel { position: absolute; right: 5%; bottom: -120px; width: 380px; height: 380px; opacity: 0.06; animation: slow-rotate 40s linear infinite; pointer-events: none; }
+  @keyframes slow-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  .hero-content { position: relative; z-index: 2; max-width: 1400px; margin: 0 auto; padding: 140px 40px 80px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .hero-eyebrow { font-size: 0.72rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: flex; align-items: center; gap: 16px; animation: fadeUp 0.8s ease 0.2s both; }
+  .hero-eyebrow::before { content: ''; display: block; width: 40px; height: 1px; background: var(--gold); }
+  .hero-h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 7vw, 7rem); font-weight: 300; color: var(--cream); line-height: 0.95; letter-spacing: -0.01em; margin-bottom: 32px; animation: fadeUp 0.8s ease 0.4s both; }
+  .hero-h1 em { font-style: italic; color: var(--gold-light); }
+  .hero-sub { font-size: 1.05rem; font-weight: 300; color: rgba(245,239,230,0.7); max-width: 500px; line-height: 1.7; margin-bottom: 48px; animation: fadeUp 0.8s ease 0.6s both; }
+  .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; animation: fadeUp 0.8s ease 0.8s both; }
+  .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--gold); color: var(--deep-brown); padding: 16px 36px; text-decoration: none; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; border: none; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden; }
+  .btn-primary::before { content: ''; position: absolute; inset: 0; background: var(--gold-light); transform: translateX(-100%); transition: transform 0.3s; }
+  .btn-primary:hover::before { transform: translateX(0); }
+  .btn-primary span { position: relative; z-index: 1; }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(201,168,76,0.4); }
+  .btn-outline { display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(245,239,230,0.4); color: var(--cream); padding: 16px 36px; text-decoration: none; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; background: transparent; transition: all 0.3s ease; }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+  .hero-stats { display: flex; gap: 48px; z-index: 2; margin-top: 60px; padding-bottom: 60px; flex-wrap: wrap; animation: fadeUp 0.8s ease 1s both; }
+  .hero-stat { text-align: left; }
+  .hero-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 300; color: var(--gold); line-height: 1; }
+  .hero-stat-label { font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,230,0.5); margin-top: 6px; }
+  .hero-stat-divider { width: 1px; background: rgba(201,168,76,0.3); align-self: stretch; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* SECTIONS */
+  section { scroll-margin-top: 80px; }
+  .section-tag { font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--cognac); margin-bottom: 12px; display: flex; align-items: center; gap: 12px; }
+  .section-tag::before { content: ''; display: block; width: 28px; height: 1px; background: var(--cognac); }
+
+  /* ABOUT */
+  #about { padding: 120px 40px; max-width: 1400px; margin: 0 auto; }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .about-visual { position: relative; }
+  .about-slideshow { position: relative; overflow: hidden; width: 100%; height: 520px; background: linear-gradient(135deg, var(--deep-brown), var(--rich-brown)); }
+  .about-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.7s ease; }
+  .about-slide.active { opacity: 1; }
+  .about-slide-prev, .about-slide-next { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(44,24,16,0.55); color: var(--gold); border: none; cursor: pointer; font-size: 2rem; width: 40px; height: 56px; display: flex; align-items: center; justify-content: center; z-index: 10; opacity: 0; transition: opacity 0.2s; }
+  .about-slide-prev { left: 0; }
+  .about-slide-next { right: 0; }
+  .about-slideshow:hover .about-slide-prev, .about-slideshow:hover .about-slide-next { opacity: 1; }
+  .about-slide-dots { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10; }
+  .about-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: background 0.3s; }
+  .about-dot.active { background: var(--gold); }
+  .about-accent-box { position: absolute; bottom: -28px; right: -28px; background: var(--gold); padding: 28px 32px; text-align: center; z-index: 2; }
+  .about-accent-num { font-family: 'Cormorant Garamond', serif; font-size: 2.6rem; font-weight: 300; color: var(--deep-brown); line-height: 1; }
+  .about-accent-label { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--deep-brown); margin-top: 6px; font-weight: 600; }
+  .about-h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 300; color: var(--deep-brown); line-height: 1.15; margin-bottom: 28px; }
+  .about-h2 em { font-style: italic; color: var(--cognac); }
+  .about-text { font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: #4A3728; margin-bottom: 20px; }
+  .about-timeline { display: flex; flex-direction: column; gap: 0; margin: 36px 0; border-left: 1px solid var(--border); padding-left: 28px; }
+  .timeline-item { position: relative; padding-bottom: 24px; }
+  .timeline-item::before { content: ''; position: absolute; left: -33px; top: 6px; width: 9px; height: 9px; border-radius: 50%; background: var(--gold); border: 2px solid var(--warm-white); box-shadow: 0 0 0 1px var(--cognac); }
+  .timeline-year { font-size: 0.68rem; letter-spacing: 0.16em; color: var(--cognac); font-weight: 600; text-transform: uppercase; margin-bottom: 4px; }
+  .timeline-desc { font-size: 0.88rem; color: #5A4035; line-height: 1.6; }
+
+  /* PRODUCTS */
+  #products { background: var(--deep-brown); padding: 120px 40px; }
+  .products-header { max-width: 1400px; margin: 0 auto 64px; display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+  .products-header .section-tag { color: var(--gold); }
+  .products-header .section-tag::before { background: var(--gold); }
+  .products-h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 4vw, 3.8rem); font-weight: 300; color: var(--cream); line-height: 1.1; }
+  .products-h2 em { font-style: italic; color: var(--gold-light); }
+  .product-tabs { display: flex; gap: 2px; max-width: 1400px; margin: 0 auto 48px; }
+  .product-tab { flex: 1; padding: 16px 24px; text-align: center; background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.15); color: rgba(245,239,230,0.5); cursor: pointer; font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; transition: all 0.3s; font-family: 'Jost', sans-serif; max-width: 200px; }
+  .product-tab.active, .product-tab:hover { background: var(--gold); color: var(--deep-brown); border-color: var(--gold); }
+  .product-panel { display: none; max-width: 1400px; margin: 0 auto; }
+  .product-panel.active { display: block; }
+
+  /* Jacket Cards */
+  .jacket-grid-new { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px; max-width: 1400px; margin: 0 auto; }
+  .jacket-card-new { background: var(--deep-brown); border: 1px solid rgba(201,168,76,0.18); cursor: pointer; transition: transform 0.3s ease, border-color 0.3s ease; overflow: hidden; }
+  .jacket-card-new:hover { transform: translateY(-5px); border-color: var(--gold); }
+  .jacket-slideshow { position: relative; overflow: hidden; height: 320px; background: #f8f8f8; }
+  .jacket-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 0.6s ease, transform 0.6s ease; transform: translateX(30px); background: #f8f8f8; }
+  .jacket-slide.active { opacity: 1; transform: translateX(0); }
+  .jacket-slide.exit-left { opacity: 0; transform: translateX(-30px); }
+  .slide-prev, .slide-next { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(44,24,16,0.55); color: var(--gold); border: none; cursor: pointer; font-size: 1.6rem; width: 36px; height: 48px; display: flex; align-items: center; justify-content: center; z-index: 10; opacity: 0; transition: opacity 0.2s; line-height: 1; }
+  .slide-prev { left: 0; }
+  .slide-next { right: 0; }
+  .jacket-slideshow:hover .slide-prev, .jacket-slideshow:hover .slide-next { opacity: 1; }
+  .jacket-dots { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; z-index: 10; }
+  .jacket-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: background 0.3s; }
+  .jacket-dot.active { background: var(--gold); }
+  .jacket-card-info { padding: 16px 20px 20px; border-top: 1px solid rgba(201,168,76,0.12); }
+  .jacket-card-style-tag { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 5px; }
+  .jacket-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 500; color: var(--cream); }
+  .modal-jacket-slides { position: relative; height: 320px; overflow: hidden; margin-bottom: 20px; background: #f8f8f8; }
+  .modal-jacket-slides .jacket-slide { background: #f8f8f8; }
+  .modal-jacket-slides .slide-prev, .modal-jacket-slides .slide-next { opacity: 0.7; }
+
+  /* Swatch Grid */
+  .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; max-width: 1400px; margin: 0 auto; }
+  .swatch-card { border: 1px solid rgba(201,168,76,0.18); overflow: hidden; cursor: pointer; transition: transform 0.3s ease, border-color 0.3s ease; background: var(--deep-brown); }
+  .swatch-card:hover { transform: translateY(-5px); border-color: var(--gold); }
+  .swatch-card img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform 0.5s ease; }
+  .swatch-card:hover img { transform: scale(1.04); }
+  .swatch-card-body { padding: 16px 20px 20px; border-top: 1px solid rgba(201,168,76,0.12); }
+  .swatch-type { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+  .swatch-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 500; color: var(--cream); }
+
+  /* FACTORY */
+  #factory { padding: 120px 40px; max-width: 1400px; margin: 0 auto; }
+  .factory-intro-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; margin-bottom: 80px; align-items: start; }
+  .factory-h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 300; color: var(--deep-brown); line-height: 1.15; margin-bottom: 24px; }
+  .factory-h2 em { font-style: italic; color: var(--cognac); }
+  .factory-lead { font-size: 0.95rem; line-height: 1.85; color: #4A3728; font-weight: 300; }
+  .factory-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .factory-highlight { padding: 28px; border: 1px solid var(--border); position: relative; overflow: hidden; transition: border-color 0.3s, transform 0.3s; }
+  .factory-highlight:hover { border-color: var(--cognac); transform: translateY(-4px); }
+  .factory-highlight-icon { font-size: 1.6rem; margin-bottom: 14px; }
+  .factory-highlight-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 500; color: var(--deep-brown); margin-bottom: 8px; }
+  .factory-highlight-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.65; }
+  .process-title { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--deep-brown); text-align: center; margin-bottom: 52px; }
+  .process-steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; }
+  .process-steps::before { content: ''; position: absolute; top: 28px; left: 10%; right: 10%; height: 1px; background: var(--border); z-index: 0; }
+  .process-step { text-align: center; padding: 0 16px; position: relative; z-index: 1; }
+  .process-step-num { width: 56px; height: 56px; border-radius: 50%; background: var(--warm-white); border: 1px solid var(--cognac); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--cognac); margin: 0 auto 16px; transition: all 0.3s; }
+  .process-step:hover .process-step-num { background: var(--cognac); color: var(--cream); }
+  .process-step-name { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--deep-brown); font-weight: 500; }
+
+  /* CONTACT */
+  #contact { background: var(--deep-brown); padding: 120px 40px; }
+  .contact-inner { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .contact-h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 4vw, 3.8rem); font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 24px; }
+  .contact-h2 em { font-style: italic; color: var(--gold-light); }
+  .contact-sub { font-size: 0.92rem; color: rgba(245,239,230,0.55); line-height: 1.75; margin-bottom: 48px; font-weight: 300; }
+  .contact-info-list { display: flex; flex-direction: column; gap: 24px; }
+  .contact-person-card { background: rgba(201,168,76,0.06); border: 1px solid var(--border-light); border-radius: 8px; padding: 20px 22px; margin-bottom: 20px; }
+  .contact-person-role { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+  .contact-person-name { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; color: var(--cream); margin-bottom: 16px; }
+  .contact-person-card .contact-info-item { margin-bottom: 10px; }
+  .contact-info-item { display: flex; gap: 18px; align-items: flex-start; }
+  .contact-info-icon { width: 42px; height: 42px; flex-shrink: 0; border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1rem; }
+  .contact-info-label { font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+  .contact-info-text { font-size: 0.88rem; color: rgba(245,239,230,0.7); line-height: 1.6; }
+  .contact-info-text a { color: rgba(245,239,230,0.7); text-decoration: none; transition: color 0.3s; }
+  .contact-info-text a:hover { color: var(--gold); }
+  .contact-form { display: flex; flex-direction: column; gap: 20px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { display: flex; flex-direction: column; gap: 8px; }
+  .form-label { font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,230,0.4); }
+  .form-input, .form-select, .form-textarea { background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); padding: 14px 18px; font-family: 'Jost', sans-serif; font-size: 0.88rem; outline: none; transition: border-color 0.3s; -webkit-appearance: none; }
+  .form-select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C9A84C' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; cursor: pointer; }
+  .form-select option { background: var(--deep-brown); }
+  .form-textarea { resize: vertical; min-height: 120px; }
+  .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--gold); }
+  .form-input::placeholder, .form-textarea::placeholder { color: rgba(245,239,230,0.25); }
+
+  /* FOOTER */
+  footer { background: var(--charcoal); border-top: 1px solid rgba(201,168,76,0.1); padding: 60px 40px 32px; }
+  .footer-inner { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 48px; }
+  .footer-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--cream); margin-bottom: 6px; }
+  .footer-logo-sub { font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+  .footer-desc { font-size: 0.83rem; color: rgba(255,255,255,0.35); line-height: 1.75; }
+  .footer-col-title { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .footer-links a { font-size: 0.83rem; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.3s; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-bottom { max-width: 1400px; margin: 0 auto; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.25); letter-spacing: 0.06em; }
+  .footer-made { font-size: 0.72rem; color: rgba(255,255,255,0.2); }
+  .footer-social { display: flex; gap: 14px; margin-top: 20px; }
+  .footer-social a { display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border: 1px solid rgba(201,168,76,0.3); color: var(--gold); text-decoration: none; font-size: 1rem; transition: background 0.3s, border-color 0.3s; }
+  .footer-social a:hover { background: rgba(201,168,76,0.12); border-color: var(--gold); }
+
+  /* MODAL */
+  .modal { position: fixed; inset: 0; z-index: 5000; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.85); opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+  .modal.open { opacity: 1; pointer-events: all; }
+  .modal-box { background: var(--deep-brown); border: 1px solid rgba(201,168,76,0.3); max-width: 520px; width: 90%; padding: 48px; transform: translateY(20px); transition: transform 0.3s; position: relative; }
+  .modal.open .modal-box { transform: translateY(0); }
+  .modal-close { position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--cream); font-size: 1.4rem; cursor: pointer; opacity: 0.6; transition: opacity 0.2s; }
+  .modal-close:hover { opacity: 1; }
+  .modal-label { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+  .modal-name { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 300; color: var(--cream); margin-bottom: 8px; }
+  .modal-style { font-size: 0.82rem; color: rgba(245,239,230,0.5); margin-bottom: 24px; }
+  .modal-divider { height: 1px; background: rgba(201,168,76,0.2); margin: 24px 0; }
+  .modal-desc { font-size: 0.9rem; color: rgba(245,239,230,0.7); line-height: 1.75; }
+
+  /* SCROLL REVEAL */
+  .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* ANNOUNCE BAR */
+  .announce-bar { background: var(--gold); color: var(--deep-brown); text-align: center; padding: 10px 20px; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; position: relative; z-index: 1001; }
+
+  /* RESPONSIVE */
+  @media(max-width: 900px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .hero-stats { gap: 24px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-visual { order: -1; }
+    .about-accent-box { bottom: -20px; right: 20px; }
+    .factory-intro-grid { grid-template-columns: 1fr; }
+    .contact-inner { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr; gap: 36px; }
+    .process-steps { grid-template-columns: repeat(3, 1fr); row-gap: 32px; }
+    .process-steps::before { display: none; }
+    .form-row { grid-template-columns: 1fr; }
+    .factory-highlights { grid-template-columns: 1fr; }
+  }
+  @media(max-width: 1200px) {
+    .jacket-grid-new { grid-template-columns: repeat(3, 1fr); }
+    .swatch-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media(max-width: 600px) {
+    nav .nav-inner { padding: 0 20px; }
+    #about, #factory, #contact { padding: 80px 20px; }
+    #products { padding: 80px 20px; }
+    footer { padding: 48px 20px 24px; }
+    .hero-content { padding: 90px 20px 40px; }
+    .hero-h1 { font-size: clamp(2rem, 9vw, 3rem); margin-bottom: 20px; }
+    .hero-sub { font-size: 0.88rem; margin-bottom: 28px; max-width: 100%; }
+    .hero-stats { gap: 16px; margin-top: 28px; flex-wrap: wrap; }
+    .hero-stat-num { font-size: 2rem; }
+    .hero-stat-divider { display: none; }
+    .btn-primary { padding: 14px 28px; font-size: 0.72rem; width: 100%; justify-content: center; }
+    .jacket-grid-new { grid-template-columns: 1fr; gap: 16px; }
+    .jacket-slideshow { height: 260px; }
+    .swatch-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .swatch-card img { height: 160px; }
+    .product-tabs { gap: 0; }
+    .product-tab { font-size: 0.65rem; padding: 12px 16px; }
+    .contact-inner { gap: 24px; }
+    .contact-person-card { padding: 14px; }
+    .footer-social { gap: 10px; }
+    .nav-logo-icon { height: 48px; width: 48px; }
+    .nav-logo-icon img { height: 48px; width: 48px; }
+  }
+  @media(max-width: 400px) {
+    .hero-h1 { font-size: 1.9rem; }
+    .swatch-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Announcement -->
+<div class="announce-bar">
+  Supplying Premium Leather Garments &amp; Finished Leather to Europe Since 1990
+</div>
+
+<!-- Nav -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <div class="nav-logo-icon">
+        <img src="assets/konark_logo-removebg-preview.png" alt="Konark Overseas Logo">
+      </div>
+      <div class="nav-logo-text">
+        Konark Overseas
+        <span>Chennai · India</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="nav-dropdown">
+        <a href="#products">Products ▾</a>
+        <div class="nav-dropdown-menu">
+          <a href="#products" onclick="openTab('jackets')">Leather Jackets</a>
+          <a href="#products" onclick="openTab('leather')">Finished Leather</a>
+        </div>
+      </li>
+      <li><a href="#factory">Factory</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-address">
+      17/Q, Veerasamy Street<br>
+      Periamet, Chennai – 600 003
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="#home" onclick="toggleMenu()">Home</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#products" onclick="toggleMenu()">Products</a>
+  <a href="#factory" onclick="toggleMenu()">Factory</a>
+  <a href="#contact" onclick="toggleMenu()">Contact Us</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-texture"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-circle-1"></div>
+  <div class="hero-circle-2"></div>
+  <svg class="hero-wheel" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="95" stroke="#C9A84C" stroke-width="2"/>
+    <circle cx="100" cy="100" r="20" stroke="#C9A84C" stroke-width="2"/>
+    <circle cx="100" cy="100" r="60" stroke="#C9A84C" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="100" y1="5" x2="100" y2="195" stroke="#C9A84C" stroke-width="1.5"/>
+    <line x1="5" y1="100" x2="195" y2="100" stroke="#C9A84C" stroke-width="1.5"/>
+    <line x1="29" y1="29" x2="171" y2="171" stroke="#C9A84C" stroke-width="1.5"/>
+    <line x1="171" y1="29" x2="29" y2="171" stroke="#C9A84C" stroke-width="1.5"/>
+    <line x1="18" y1="62" x2="182" y2="138" stroke="#C9A84C" stroke-width="1"/>
+    <line x1="62" y1="18" x2="138" y2="182" stroke="#C9A84C" stroke-width="1"/>
+    <line x1="18" y1="138" x2="182" y2="62" stroke="#C9A84C" stroke-width="1"/>
+    <line x1="138" y1="18" x2="62" y2="182" stroke="#C9A84C" stroke-width="1"/>
+  </svg>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Est. 1990 · Chennai, India</div>
+    <h1 class="hero-h1">
+      Where Leather<br>
+      Becomes <em>Legacy</em>
+    </h1>
+    <p class="hero-sub">
+      Three decades of chrome-tanned excellence. Premium finished leather and garments crafted for the world's most discerning fashion houses across the Globe and beyond.
+    </p>
+    <div class="hero-cta">
+      <a href="#products" class="btn-primary">
+        <span>Explore Products</span>
+        <span>→</span>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">35+</div>
+        <div class="hero-stat-label">Years of Excellence</div>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">6+</div>
+        <div class="hero-stat-label">Countries Served</div>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">3K+</div>
+        <div class="hero-stat-label">Garments / Month</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="about-slideshow" id="aboutSlideshow">
+        <img src="assets/3.png" class="about-slide active" alt="Konark Overseas craftsmanship">
+        <img src="assets/2.png" class="about-slide" alt="Konark Overseas leather">
+        <img src="assets/1.png" class="about-slide" alt="Konark Overseas factory">
+        <img src="assets/4.png" class="about-slide" alt="Konark Overseas products">
+        <img src="assets/5.png" class="about-slide" alt="Konark Overseas team">
+        <button class="about-slide-prev" onclick="aboutSlideNav(-1)">&#8249;</button>
+        <button class="about-slide-next" onclick="aboutSlideNav(1)">&#8250;</button>
+        <div class="about-slide-dots">
+          <span class="about-dot active" onclick="setAboutSlide(0)"></span>
+          <span class="about-dot" onclick="setAboutSlide(1)"></span>
+          <span class="about-dot" onclick="setAboutSlide(2)"></span>
+          <span class="about-dot" onclick="setAboutSlide(3)"></span>
+          <span class="about-dot" onclick="setAboutSlide(4)"></span>
+        </div>
+      </div>
+      <div class="about-accent-box">
+        <div class="about-accent-num">1990</div>
+        <div class="about-accent-label">Founded</div>
+      </div>
+    </div>
+    <div class="about-content reveal reveal-delay-2">
+      <div class="section-tag">Our Story</div>
+      <h2 class="about-h2">
+        Craftsmanship Rooted in<br>
+        <em>Three Decades</em> of Trust
+      </h2>
+      <p class="about-text">
+        Konark Overseas is a Chennai-based manufacturer and exporter of premium leather garments and finished leather, with a heritage spanning over three decades. Our commitment to superior quality, ethical production, and consistent craftsmanship has earned us enduring partnerships with fashion houses across the Globe.
+      </p>
+      <p class="about-text">
+        Every skin that passes through our facility is a testament to our founding principle: that excellence is not achieved once — it is practiced daily.
+      </p>
+      <div class="about-timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1990</div>
+          <div class="timeline-desc">Founded as Navlac Leathers — supplying finished leather to garment manufacturers in Italy and Germany.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Early 2000s</div>
+          <div class="timeline-desc">Expanded into leather garment manufacturing under Shrinkar Garments, serving Italy, Germany, USA, Switzerland, and Sweden.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Present</div>
+          <div class="timeline-desc">Operating as Konark Overseas — delivering both finished leather and premium leather garments to clients across Europe.</div>
+        </div>
+      </div>
+      <a href="#contact" class="btn-primary" style="text-decoration:none;display:inline-flex;align-items:center;gap:10px;">
+        <span>Get in Touch</span><span>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="products-header">
+    <div>
+      <div class="section-tag">Our Collection</div>
+      <h2 class="products-h2">Premium Leather<br><em>Products</em></h2>
+    </div>
+    <p style="font-size:1.08rem;color:rgba(245,239,230,0.72);max-width:340px;line-height:1.75;font-weight:300;">
+      Crafting premium suede &amp; nappa leather jackets for global brands with low MOQs, fast sampling, flawless quality.
+    </p>
+  </div>
+
+  <div class="product-tabs">
+    <button class="product-tab active" onclick="openTab('jackets')">Leather Jackets</button>
+    <button class="product-tab" onclick="openTab('leather')">Finished Leather</button>
+  </div>
+
+  <!-- Jackets Panel -->
+  <div class="product-panel active" id="panel-jackets">
+    <div class="jacket-grid-new">
+
+      <div class="jacket-card-new" onclick="openJacketModal(1)">
+        <div class="jacket-slideshow">
+          <img src="assets/1.1 (1).png" class="jacket-slide active" alt="Suede – Navy Zipper Polo">
+          <img src="assets/1.2.png" class="jacket-slide" alt="Suede – Navy Zipper Polo view 2">
+          <img src="assets/1.3.png" class="jacket-slide" alt="Suede – Navy Zipper Polo view 3">
+          <button class="slide-prev" onclick="slideNav(this,-1)">&#8249;</button>
+          <button class="slide-next" onclick="slideNav(this,1)">&#8250;</button>
+          <div class="jacket-dots">
+            <span class="jacket-dot active" onclick="setSlide(this,0)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,1)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,2)"></span>
+          </div>
+        </div>
+        <div class="jacket-card-info">
+          <div class="jacket-card-style-tag">Leather Jacket · Unisex</div>
+          <div class="jacket-card-title">Suede – Navy Zipper Polo</div>
+        </div>
+      </div>
+
+      <div class="jacket-card-new" onclick="openJacketModal(2)">
+        <div class="jacket-slideshow">
+          <img src="assets/2.1.png" class="jacket-slide active" alt="Sheep Nappa – Black Biker Jacket">
+          <img src="assets/2.2.png" class="jacket-slide" alt="Sheep Nappa – Black Biker Jacket view 2">
+          <img src="assets/2.3.png" class="jacket-slide" alt="Sheep Nappa – Black Biker Jacket view 3">
+          <button class="slide-prev" onclick="slideNav(this,-1)">&#8249;</button>
+          <button class="slide-next" onclick="slideNav(this,1)">&#8250;</button>
+          <div class="jacket-dots">
+            <span class="jacket-dot active" onclick="setSlide(this,0)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,1)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,2)"></span>
+          </div>
+        </div>
+        <div class="jacket-card-info">
+          <div class="jacket-card-style-tag">Leather Jacket · Women</div>
+          <div class="jacket-card-title">Sheep Nappa – Black Biker Jacket</div>
+        </div>
+      </div>
+
+      <div class="jacket-card-new" onclick="openJacketModal(3)">
+        <div class="jacket-slideshow">
+          <img src="assets/3.1 (1).png" class="jacket-slide active" alt="Suede – Whisky Button Polo">
+          <img src="assets/3.2.png" class="jacket-slide" alt="Suede – Whisky Button Polo view 2">
+          <img src="assets/3.3.png" class="jacket-slide" alt="Suede – Whisky Button Polo view 3">
+          <button class="slide-prev" onclick="slideNav(this,-1)">&#8249;</button>
+          <button class="slide-next" onclick="slideNav(this,1)">&#8250;</button>
+          <div class="jacket-dots">
+            <span class="jacket-dot active" onclick="setSlide(this,0)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,1)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,2)"></span>
+          </div>
+        </div>
+        <div class="jacket-card-info">
+          <div class="jacket-card-style-tag">Leather Jacket · Unisex</div>
+          <div class="jacket-card-title">Suede – Whisky Button Polo</div>
+        </div>
+      </div>
+
+      <div class="jacket-card-new" onclick="openJacketModal(4)">
+        <div class="jacket-slideshow">
+          <img src="assets/4.1 (1).png" class="jacket-slide active" alt="Suede – Tobacco Trench Coat">
+          <img src="assets/4.2 (1).png" class="jacket-slide" alt="Suede – Tobacco Trench Coat view 2">
+          <img src="assets/4.3 (1).png" class="jacket-slide" alt="Suede – Tobacco Trench Coat view 3">
+          <button class="slide-prev" onclick="slideNav(this,-1)">&#8249;</button>
+          <button class="slide-next" onclick="slideNav(this,1)">&#8250;</button>
+          <div class="jacket-dots">
+            <span class="jacket-dot active" onclick="setSlide(this,0)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,1)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,2)"></span>
+          </div>
+        </div>
+        <div class="jacket-card-info">
+          <div class="jacket-card-style-tag">Leather Jacket · Women</div>
+          <div class="jacket-card-title">Suede – Tobacco Trench Coat</div>
+        </div>
+      </div>
+
+      <div class="jacket-card-new" onclick="openJacketModal(5)">
+        <div class="jacket-slideshow">
+          <img src="assets/5.1.png" class="jacket-slide active" alt="Sheep Waxy Nappa – Tan Bomber">
+          <img src="assets/5.2 (1).png" class="jacket-slide" alt="Sheep Waxy Nappa – Tan Bomber view 2">
+          <img src="assets/5.3.png" class="jacket-slide" alt="Sheep Waxy Nappa – Tan Bomber view 3">
+          <button class="slide-prev" onclick="slideNav(this,-1)">&#8249;</button>
+          <button class="slide-next" onclick="slideNav(this,1)">&#8250;</button>
+          <div class="jacket-dots">
+            <span class="jacket-dot active" onclick="setSlide(this,0)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,1)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,2)"></span>
+          </div>
+        </div>
+        <div class="jacket-card-info">
+          <div class="jacket-card-style-tag">Leather Jacket · Unisex</div>
+          <div class="jacket-card-title">Sheep Waxy Nappa – Tan Bomber</div>
+        </div>
+      </div>
+
+      <div class="jacket-card-new" onclick="openJacketModal(6)">
+        <div class="jacket-slideshow">
+          <img src="assets/6.1.png" class="jacket-slide active" alt="Suede – Tobacco Zipper Polo">
+          <img src="assets/6.2.png" class="jacket-slide" alt="Suede – Tobacco Zipper Polo view 2">
+          <img src="assets/6.3.png" class="jacket-slide" alt="Suede – Tobacco Zipper Polo view 3">
+          <button class="slide-prev" onclick="slideNav(this,-1)">&#8249;</button>
+          <button class="slide-next" onclick="slideNav(this,1)">&#8250;</button>
+          <div class="jacket-dots">
+            <span class="jacket-dot active" onclick="setSlide(this,0)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,1)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,2)"></span>
+          </div>
+        </div>
+        <div class="jacket-card-info">
+          <div class="jacket-card-style-tag">Leather Jacket · Unisex</div>
+          <div class="jacket-card-title">Suede – Tobacco Zipper Polo</div>
+        </div>
+      </div>
+
+      <div class="jacket-card-new" onclick="openJacketModal(7)">
+        <div class="jacket-slideshow">
+          <img src="assets/7.1.png" class="jacket-slide active" alt="Suede – Gold Long Sleeve Blazer">
+          <img src="assets/7.2.png" class="jacket-slide" alt="Suede – Gold Long Sleeve Blazer view 2">
+          <img src="assets/7.3.png" class="jacket-slide" alt="Suede – Gold Long Sleeve Blazer view 3">
+          <button class="slide-prev" onclick="slideNav(this,-1)">&#8249;</button>
+          <button class="slide-next" onclick="slideNav(this,1)">&#8250;</button>
+          <div class="jacket-dots">
+            <span class="jacket-dot active" onclick="setSlide(this,0)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,1)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,2)"></span>
+          </div>
+        </div>
+        <div class="jacket-card-info">
+          <div class="jacket-card-style-tag">Leather Jacket · Women</div>
+          <div class="jacket-card-title">Suede – Gold Long Sleeve Blazer</div>
+        </div>
+      </div>
+
+      <div class="jacket-card-new" onclick="openJacketModal(8)">
+        <div class="jacket-slideshow">
+          <img src="assets/8.1 (1).png" class="jacket-slide active" alt="Suede – Cognac Zipper Polo with Leather Collar">
+          <img src="assets/8.2 (1).png" class="jacket-slide" alt="Suede – Cognac Zipper Polo view 2">
+          <img src="assets/8.3.png" class="jacket-slide" alt="Suede – Cognac Zipper Polo view 3">
+          <button class="slide-prev" onclick="slideNav(this,-1)">&#8249;</button>
+          <button class="slide-next" onclick="slideNav(this,1)">&#8250;</button>
+          <div class="jacket-dots">
+            <span class="jacket-dot active" onclick="setSlide(this,0)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,1)"></span>
+            <span class="jacket-dot" onclick="setSlide(this,2)"></span>
+          </div>
+        </div>
+        <div class="jacket-card-info">
+          <div class="jacket-card-style-tag">Leather Jacket · Unisex</div>
+          <div class="jacket-card-title">Suede – Cognac Zipper Polo with Leather Collar</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Finished Leather Panel -->
+  <div class="product-panel" id="panel-leather">
+    <div class="swatch-grid">
+      <div class="swatch-card" onclick="openModal('Suede – Vennila','Finished Leather · Suede','Premium suede leather in a warm Vennila tone. Soft napped surface with consistent texture throughout. Available for garments, accessories and export orders.')">
+        <img src="assets/vennila.jpeg" alt="Suede Vennila">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Vennila</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Tabacco','Finished Leather · Suede','Rich Tabacco brown suede with deep warmth and velvety finish. A signature shade for premium outerwear.')">
+        <img src="assets/tobacco.jpeg" alt="Suede Tabacco">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Tabacco</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Sand','Finished Leather · Suede','Natural Sand suede with a clean, earthy tone. Versatile colourway suited for all seasons and garment styles.')">
+        <img src="assets/band.jpeg" alt="Suede Sand">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Sand</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Gold','Finished Leather · Suede','Warm Gold suede with a lustrous honey tone. Chrome-tanned for durability with a soft, supple hand feel.')">
+        <img src="assets/gold.jpeg" alt="Suede Gold">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Gold</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Sky Blue','Finished Leather · Suede','Fresh Sky Blue suede with a soft matte finish. An elegant, contemporary colourway for fashion-forward collections.')">
+        <img src="assets/sky blue.jpeg" alt="Suede Sky Blue">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Sky Blue</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Camel','Finished Leather · Suede','Classic Camel suede — a timeless neutral with warm undertones. Ideal for luxury coats, jackets and accessories.')">
+        <img src="assets/camel.jpeg" alt="Suede Camel">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Camel</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Lt. Grey','Finished Leather · Suede','Light Grey suede with a refined, minimal aesthetic. Perfect for contemporary European fashion collections.')">
+        <img src="assets/l1 grey.jpeg" alt="Suede Lt. Grey">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Lt. Grey</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Whisky','Finished Leather · Suede','Warm Whisky suede with a golden-brown character. Full-bodied tone that ages beautifully with wear.')">
+        <img src="assets/whisky.jpeg" alt="Suede Whisky">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Whisky</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Mango','Finished Leather · Suede','Earthy Mango suede with a rich amber warmth. A distinctive tone ideal for statement garments.')">
+        <img src="assets/mango.jpeg" alt="Suede Mango">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Mango</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Navy Blue','Finished Leather · Suede','Deep Navy Blue suede with a rich, saturated tone. A classic colourway for premium fashion and outerwear.')">
+        <img src="assets/navy blue.jpeg" alt="Suede Navy Blue">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Navy Blue</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Maroon','Finished Leather · Suede','Elegant Maroon suede with deep burgundy tones. A luxurious colourway favoured by European fashion houses.')">
+        <img src="assets/maroon.jpeg" alt="Suede Maroon">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Maroon</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Moka Brown','Finished Leather · Suede','Dark Moka Brown suede with a near-black depth. Premium finish for sophisticated, minimalist collections.')">
+        <img src="assets/moea brown.jpeg" alt="Suede Moka Brown">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Moka Brown</div></div>
+      </div>
+      <div class="swatch-card" onclick="openModal('Suede – Lt. Brown','Finished Leather · Suede','Light Brown suede with a natural, organic warmth. A versatile everyday colourway for garment and accessory production.')">
+        <img src="assets/l1 brown.jpeg" alt="Suede Lt. Brown">
+        <div class="swatch-card-body"><div class="swatch-type">Suede</div><div class="swatch-name">Lt. Brown</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACTORY -->
+<section id="factory">
+  <div class="factory-intro-grid">
+    <div class="reveal">
+      <div class="section-tag">Our Infrastructure</div>
+      <h2 class="factory-h2">Built for<br><em>Precision</em><br>at Scale</h2>
+      <p class="factory-lead">
+        Our state-of-the-art facility in Chennai is designed to meet the exacting standards of global fashion. Every stage of production is integrated, monitored, and certified — ensuring consistent quality from raw skin to finished garment.
+      </p>
+    </div>
+    <div class="factory-highlights reveal reveal-delay-2">
+      <div class="factory-highlight">
+        <div class="factory-highlight-icon">🏭</div>
+        <div class="factory-highlight-title">Production Capacity</div>
+        <div class="factory-highlight-desc">With a monthly production capacity of 3,000+ leather garments across two modern production units, we combine skilled craftsmanship with advanced manufacturing excellence.</div>
+      </div>
+      <div class="factory-highlight">
+        <div class="factory-highlight-icon">🔬</div>
+        <div class="factory-highlight-title">R&amp;D Excellence</div>
+        <div class="factory-highlight-desc">With over 25 years of experience, we collaborate with global brands to develop modern style patterns and successfully translate them into high-quality production.</div>
+      </div>
+      <div class="factory-highlight">
+        <div class="factory-highlight-icon">🌿</div>
+        <div class="factory-highlight-title">Sustainable Practices</div>
+        <div class="factory-highlight-desc">Committed to sustainable manufacturing of finished leather and leather garments through responsible sourcing, efficient production, and premium craftsmanship for global fashion brands.</div>
+      </div>
+      <div class="factory-highlight">
+        <div class="factory-highlight-icon">✅</div>
+        <div class="factory-highlight-title">Quality Control</div>
+        <div class="factory-highlight-desc">Thorough QC processes at every stage. Consistent thickness, texture, and color across production batches meeting international fashion industry requirements.</div>
+      </div>
+    </div>
+  </div>
+  <div class="reveal">
+    <h3 class="process-title">Our <em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--cognac)">10-Step</em> Suede Leather Manufacturing Process</h3>
+    <div class="process-steps">
+      <div class="process-step"><div class="process-step-num">01</div><div class="process-step-name">Samming</div></div>
+      <div class="process-step"><div class="process-step-num">02</div><div class="process-step-name">Shaving</div></div>
+      <div class="process-step"><div class="process-step-num">03</div><div class="process-step-name">Retanning</div></div>
+      <div class="process-step"><div class="process-step-num">04</div><div class="process-step-name">Dyeing</div></div>
+      <div class="process-step"><div class="process-step-num">05</div><div class="process-step-name">Setting Out</div></div>
+      <div class="process-step"><div class="process-step-num">06</div><div class="process-step-name">Drying</div></div>
+      <div class="process-step"><div class="process-step-num">07</div><div class="process-step-name">Staking</div></div>
+      <div class="process-step"><div class="process-step-num">08</div><div class="process-step-name">Buffing</div></div>
+      <div class="process-step"><div class="process-step-num">09</div><div class="process-step-name">Finishing</div></div>
+      <div class="process-step"><div class="process-step-num">10</div><div class="process-step-name">Plating</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="reveal">
+      <div class="section-tag" style="color:var(--gold)"><span style="background:var(--gold);display:inline-block;width:28px;height:1px;vertical-align:middle;margin-right:12px;"></span>Get in Touch</div>
+      <h2 class="contact-h2">Let's Create<br><em>Together</em></h2>
+      <p class="contact-sub">
+        Premium finished leather and expertly crafted leather garments designed for global fashion brands, leather goods labels, and manufacturers. Connect with our team to discover premium leathers and leather garments.
+      </p>
+      <div class="contact-info-list">
+        <div class="contact-person-card">
+          <div class="contact-person-name" style="color:rgba(245,239,230,0.85);">Kumaraswamy</div>
+          <div class="contact-person-role">Chief Executive Officer (CEO)</div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div><div class="contact-info-label">Phone</div><div class="contact-info-text"><a href="tel:+919940023150">+91 99400 23150</a></div></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉️</div>
+            <div><div class="contact-info-label">Email</div><div class="contact-info-text"><a href="mailto:konarkoverseasindia@gmail.com">konarkoverseasindia@gmail.com</a></div></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div><div class="contact-info-label">Address</div><div class="contact-info-text">2nd Floor, 17/Q, Veerasamy Street<br>Periamet, Chennai – 600 003, Tamil Nadu, India</div></div>
+          </div>
+        </div>
+        <div class="contact-person-card">
+          <div class="contact-person-name" style="color:rgba(245,239,230,0.85);">Eswar</div>
+          <div class="contact-person-role">Director – Business Operations</div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉️</div>
+            <div><div class="contact-info-label">Email</div><div class="contact-info-text"><a href="mailto:eswar.konarkoverseas@gmail.com">eswar.konarkoverseas@gmail.com</a></div></div>
+          </div>
+        </div>
+        <div class="contact-person-card">
+          <div class="contact-person-name" style="color:rgba(245,239,230,0.85);">Jeganathan</div>
+          <div class="contact-person-role">Chief Operating Officer (COO)</div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div><div class="contact-info-label">Phone</div><div class="contact-info-text"><a href="tel:+447555678996">+44 75556 78996</a></div></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉️</div>
+            <div><div class="contact-info-label">Email</div><div class="contact-info-text"><a href="mailto:konarkoverseas.global@gmail.com">konarkoverseas.global@gmail.com</a></div></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div><div class="contact-info-label">Address</div><div class="contact-info-text">29 Oakmead Road, Croydon<br>CR0 3AS, United Kingdom</div></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Export Markets</div>
+            <div class="contact-info-text">Italy · Germany · United Kingdom · France · Sweden · Canada · United States · Switzerland</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <form class="contact-form" action="https://formspree.io/f/konarkoverseas.global@gmail.com" method="POST" onsubmit="handleFormSubmit(event)">
+        <input type="hidden" name="_subject" value="New Enquiry – Konark Overseas Website">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First Name</label>
+            <input type="text" name="first_name" class="form-input" placeholder="Alessandro" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Last Name</label>
+            <input type="text" name="last_name" class="form-input" placeholder="Ferretti" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Company / Brand</label>
+          <input type="text" name="company" class="form-input" placeholder="Fashion House Name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" name="email" class="form-input" placeholder="contact@fashionhouse.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Enquiry Type</label>
+          <select name="enquiry_type" class="form-select" required>
+            <option value="">Select an option</option>
+            <option>Request Leather Sample</option>
+            <option>Jacket / Garment Order</option>
+            <option>Finished Leather Supply</option>
+            <option>Export Partnership</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea name="message" class="form-textarea" placeholder="Tell us about your requirements — leather type, quantity, colorways, delivery timeline..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="border:none;cursor:pointer;align-self:flex-start;">
+          <span>Send Enquiry</span><span>→</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:8px;">
+        <img src="assets/konark_logo-removebg-preview.png" alt="Konark Overseas" style="width:52px;height:52px;object-fit:contain;">
+        <div class="footer-logo-text" style="margin-bottom:0;">Konark Overseas</div>
+      </div>
+      <div class="footer-logo-sub">Premium Leather · Chennai · India</div>
+      <p class="footer-desc">
+        Established in 1990, Konark Overseas is a trusted manufacturer and exporter of premium finished leather and leather garments. Supplying to Europe's finest fashion houses for over three decades.
+      </p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/konarkoverseas.leather?igsh=MXVrc3Y3endnaHJhYw==" target="_blank" title="Instagram" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.youtube.com/channel/UC_b4llHuEe4qCX5t01Gh6IQ" target="_blank" title="YouTube" aria-label="YouTube">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58a2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" title="LinkedIn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://www.instagram.com/konarkoverseas.leather?igsh=MXVrc3Y3endnaHJhYw==" target="_blank" title="Facebook" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#factory">Factory</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Products</div>
+      <ul class="footer-links">
+        <li><a href="#products" onclick="openTab('jackets')">Leather Jackets</a></li>
+        <li><a href="#products" onclick="openTab('leather')">Nappa Leather</a></li>
+        <li><a href="#products" onclick="openTab('leather')">Nubuck Leather</a></li>
+        <li><a href="#products" onclick="openTab('leather')">Suede Leather</a></li>
+        <li><a href="#products" onclick="openTab('leather')">Full-Aniline Leather</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Konark Overseas. 17/Q, Veerasamy Street, Periamet, Chennai – 600 003, India.</div>
+    <div class="footer-made">BSCI Compliant · Est. 1990</div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="productModal" onclick="closeModal(event)">
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    <div class="modal-label" id="modalLabel"></div>
+    <div class="modal-name" id="modalName"></div>
+    <div class="modal-style" id="modalStyle"></div>
+    <div class="modal-divider"></div>
+    <div class="modal-desc" id="modalDesc"></div>
+    <div style="margin-top:28px;">
+      <a href="#contact" onclick="closeModalDirect()" class="btn-primary" style="text-decoration:none;display:inline-flex;align-items:center;gap:10px;font-size:0.72rem;">
+        <span>Request Sample</span><span>→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast" style="position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--gold);color:var(--deep-brown);padding:16px 32px;font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;z-index:9999;transition:transform 0.4s ease;pointer-events:none;"></div>
+
+<script>
+  // Nav scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 80);
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+    document.getElementById('overlay').classList.toggle('active');
+  }
+
+  // Product tabs
+  function openTab(tab) {
+    document.querySelectorAll('.product-tab').forEach((t, i) => {
+      t.classList.toggle('active', (i === 0 && tab === 'jackets') || (i === 1 && tab === 'leather'));
+    });
+    document.querySelectorAll('.product-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('panel-' + tab).classList.add('active');
+  }
+
+  // Modal (leather swatches)
+  function openModal(name, style, desc) {
+    document.getElementById('modalLabel').textContent = 'Finished Leather Product';
+    document.getElementById('modalName').textContent = name;
+    document.getElementById('modalStyle').textContent = style;
+    // Remove old slideshow if any
+    const oldSS = document.getElementById('modalSlideshow');
+    if (oldSS) oldSS.remove();
+    document.getElementById('modalDesc').textContent = desc;
+    document.getElementById('productModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(e) {
+    if (e.target === document.getElementById('productModal')) closeModalDirect();
+  }
+  function closeModalDirect() {
+    document.getElementById('productModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModalDirect(); });
+
+  // Jacket data
+  const jacketData = {
+    1: { name: "Suede – Navy Zipper Polo", gender: "Unisex", imgs: ["assets/1.1 (1).png","asset/1.2.png","asset/1.3.png"] },
+    2: { name: "Sheep Nappa – Black Biker Jacket", gender: "Women", imgs: ["assets/2.1.png","asset/2.2.png","asset/2.3.png"] },
+    3: { name: "Suede – Whisky Button Polo", gender: "Unisex", imgs: ["assets/3.1 (1).png","asset/3.2.png","asset/3.3.png"] },
+    4: { name: "Suede – Tobacco Trench Coat", gender: "Women", imgs: ["assets/4.1 (1).png","asset/4.2 (1).png","asset/4.3 (1).png"] },
+    5: { name: "Sheep Waxy Nappa – Tan Bomber", gender: "Unisex", imgs: ["assets/5.1.png","asset/5.2 (1).png","asset/5.3.png"] },
+    6: { name: "Suede – Tobacco Zipper Polo", gender: "Unisex", imgs: ["assets/6.1.png","asset/6.2.png","asset/6.3.png"] },
+    7: { name: "Suede – Gold Long Sleeve Blazer", gender: "Women", imgs: ["assets/7.1.png","asset/7.2.png","asset/7.3.png"] },
+    8: { name: "Suede – Cognac Zipper Polo with Leather Collar", gender: "Unisex", imgs: ["assets/8.1 (1).png","asset/8.2 (1).png","asset/8.3.png"] }
+  };
+
+  function openJacketModal(id) {
+    const d = jacketData[id];
+    document.getElementById('modalLabel').textContent = 'Leather Jacket · ' + d.gender;
+    document.getElementById('modalName').textContent = d.name;
+    document.getElementById('modalStyle').textContent = '';
+    // Remove old slideshow
+    const oldSS = document.getElementById('modalSlideshow');
+    if (oldSS) oldSS.remove();
+    // Build slideshow
+    const ss = document.createElement('div');
+    ss.id = 'modalSlideshow';
+    ss.className = 'modal-jacket-slides';
+    d.imgs.forEach((src, i) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.className = 'jacket-slide' + (i === 0 ? ' active' : '');
+      img.alt = d.name;
+      ss.appendChild(img);
+    });
+    if (d.imgs.length > 1) {
+      const prev = document.createElement('button');
+      prev.className = 'slide-prev'; prev.innerHTML = '&#8249;';
+      prev.onclick = function(e) { e.stopPropagation(); slideNav(this, -1); };
+      const next = document.createElement('button');
+      next.className = 'slide-next'; next.innerHTML = '&#8250;';
+      next.onclick = function(e) { e.stopPropagation(); slideNav(this, 1); };
+      const dotsDiv = document.createElement('div');
+      dotsDiv.className = 'jacket-dots';
+      d.imgs.forEach((_, i) => {
+        const dot = document.createElement('span');
+        dot.className = 'jacket-dot' + (i === 0 ? ' active' : '');
+        dot.onclick = (function(idx) { return function(e) { e.stopPropagation(); setSlide(dot, idx); }; })(i);
+        dotsDiv.appendChild(dot);
+      });
+      ss.append(prev, next, dotsDiv);
+    }
+    document.getElementById('modalDesc').textContent = '';
+    document.getElementById('modalDesc').before(ss);
+    document.getElementById('productModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Slideshow controls
+  function slideNav(btn, dir) {
+    event.stopPropagation();
+    const ss = btn.closest('.jacket-slideshow') || btn.closest('.modal-jacket-slides');
+    const slides = ss.querySelectorAll('.jacket-slide');
+    const dots = ss.querySelectorAll('.jacket-dot');
+    let cur = [...slides].findIndex(s => s.classList.contains('active'));
+    slides[cur].classList.remove('active');
+    slides[cur].classList.add('exit-left');
+    if (dots[cur]) dots[cur].classList.remove('active');
+    cur = (cur + dir + slides.length) % slides.length;
+    slides[cur].classList.add('active');
+    if (dots[cur]) dots[cur].classList.add('active');
+    setTimeout(() => {
+      ss.querySelectorAll('.jacket-slide.exit-left').forEach(s => s.classList.remove('exit-left'));
+    }, 650);
+  }
+
+  function setSlide(dot, idx) {
+    event.stopPropagation();
+    const ss = dot.closest('.jacket-slideshow') || dot.closest('.modal-jacket-slides');
+    const slides = ss.querySelectorAll('.jacket-slide');
+    const dots = ss.querySelectorAll('.jacket-dot');
+    slides.forEach(s => { s.classList.remove('active', 'exit-left'); });
+    dots.forEach(d => d.classList.remove('active'));
+    slides[idx].classList.add('active');
+    dots[idx].classList.add('active');
+  }
+
+  // About slideshow
+  let aboutCurSlide = 0;
+  function setAboutSlide(idx) {
+    const slides = document.querySelectorAll('.about-slide');
+    const dots = document.querySelectorAll('.about-dot');
+    slides[aboutCurSlide].classList.remove('active');
+    dots[aboutCurSlide].classList.remove('active');
+    aboutCurSlide = idx;
+    slides[aboutCurSlide].classList.add('active');
+    dots[aboutCurSlide].classList.add('active');
+  }
+  function aboutSlideNav(dir) {
+    const slides = document.querySelectorAll('.about-slide');
+    setAboutSlide((aboutCurSlide + dir + slides.length) % slides.length);
+  }
+  setInterval(() => {
+    const slides = document.querySelectorAll('.about-slide');
+    if (slides.length) aboutSlideNav(1);
+  }, 4000);
+
+  // Auto-advance jacket cards
+  setInterval(() => {
+    document.querySelectorAll('.jacket-slideshow').forEach(ss => {
+      const slides = ss.querySelectorAll('.jacket-slide');
+      if (slides.length < 2) return;
+      let cur = [...slides].findIndex(s => s.classList.contains('active'));
+      slides[cur].classList.remove('active');
+      slides[cur].classList.add('exit-left');
+      const dots = ss.querySelectorAll('.jacket-dot');
+      if (dots[cur]) dots[cur].classList.remove('active');
+      const next = (cur + 1) % slides.length;
+      slides[next].classList.add('active');
+      if (dots[next]) dots[next].classList.add('active');
+      setTimeout(() => ss.querySelectorAll('.jacket-slide.exit-left').forEach(s => s.classList.remove('exit-left')), 650);
+    });
+  }, 3000);
+
+  // Form submit
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    const originalHTML = btn.innerHTML;
+    btn.innerHTML = '<span>Sending...</span>';
+    btn.disabled = true;
+    fetch('https://formspree.io/f/konarkoverseas.global@gmail.com', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(r => {
+      if (r.ok) { showToast("Enquiry sent! We'll respond within 24 hours."); form.reset(); }
+      else showToast('Something went wrong. Please email us directly.');
+    }).catch(() => showToast('Something went wrong. Please email us directly.'))
+    .finally(() => { btn.innerHTML = originalHTML; btn.disabled = false; });
+  }
+
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.style.transform = 'translateX(-50%) translateY(0)';
+    setTimeout(() => { t.style.transform = 'translateX(-50%) translateY(80px)'; }, 3500);
+  }
+
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // Active nav
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
+    navLinks.forEach(a => { a.classList.toggle('active', a.getAttribute('href') === '#' + cur); });
+  });
+</script>
+</body>
+</html>
